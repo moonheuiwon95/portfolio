@@ -1,0 +1,459 @@
+#subVisual {
+    height: 1000px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subVisual01 {
+    background-image: url('../images/about-us-visual.jpg');
+}
+.subVisual02 {
+    background-image: url('../images/products-visual.jpg');
+}
+#subVisual .subTitle {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#subVisual .subTitleKr {
+    overflow: hidden;
+    height: 40px;
+    font-size: 30px;
+}
+#subVisual .subTitleEn {
+    overflow: hidden;
+    height: 160px;
+    font-size: 90px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+#subVisual .subTitleEn:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 30px;
+    margin: 10px auto;
+    background-color: #fff;
+    opacity: 1;
+}
+#subVisual .subTxt {
+    margin-top: 15px;
+}
+.container {
+    /* width: 1700px; */
+    margin: auto;
+}
+#subContents {
+    z-index: 3;
+    position: relative;
+    width: 1500px;
+    padding: 50px 150px;
+    margin: -200px auto 0;
+    background-color: #fff;
+    color: #333;
+}
+#lnb {
+    width: 1200px;
+    height: 70px;
+    /* margin: 0 auto; */
+}
+#lnb .btnHome {
+    float: left;
+    text-align: center;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    background-color: #fff;
+}
+
+#lnb .listBox,
+#lnb .listTxt {
+    float: left;
+    position: relative;
+    display: block;
+    padding: 0 5px;
+    height: 70px;
+    line-height: 70px;
+    color: #666;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+#lnb .listTxt i {
+    display: inline-block;
+}
+#lnb .listTxt p {
+    display: inline-block;
+}
+#lnb .listBox a:hover {
+    color: var(--main-color);
+}
+#subContentsBox {
+    width: 1500px;
+    margin: 0 auto;
+}
+#subContents h2 {
+    font-size: 40px;
+    font-weight: 200;
+}
+#subContents h3 span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+}
+#subContents h3 strong {
+    font-size: 70px;
+    display: block;
+    font-weight: 200;
+}
+.subContentsBox {
+    padding: 180px 0 0 0;
+}
+.subContentsBox .txtBox {
+    width: 48%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contentsSub01 {
+    position: relative;
+}
+
+.contentsSub01 .imgBox {
+    float: right;
+    /* padding-right: 200px; */
+    margin-top: -200px;
+}
+.contentsSub01 .txtBox {
+    float: left;
+    padding-top: 0;
+}
+.contentsSub02 {
+    width: 100%;
+    position: relative;
+}
+.contentsSub02 .imgBox {
+    float: left;
+}
+.contentsSub02 .txtBox {
+    position: absolute;
+    right: 0px;
+    /* margin-right: 200px; */
+}
+.contentsSub03 {
+    position: relative;
+}
+.contentsSub03 .imgBox {
+    float: right;
+    /* padding-right: 200px; */
+    margin-top: -100px;
+}
+#table {
+    margin-top: 120px;
+    z-index: 0;
+}
+#table .bg {
+    /* width: 100%; */
+    background-image: url('../images/about-banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 150px;
+    vertical-align: bottom;
+}
+#table .bg {
+    vertical-align: bottom;
+    z-index: -1;
+    position: relative;
+}
+.tableBox {
+    z-index: 1;
+    width: 1200px;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 100px 0;
+    margin-top: -100px;
+}
+table caption {
+    display: none;
+}
+table {
+    border-top: 2px solid #222;
+    width: 80%;
+    margin: 0 auto;
+}
+
+table td,
+table th {
+    border: 1px solid #d9d9d9;
+    padding: 15px;
+    border-left: none;
+    border-right: none;
+}
+table th {
+    background-color: #fff;
+}
+
+/* company_01_about us */
+#history h3 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 55px;
+    font-weight: 200;
+    letter-spacing: 0.5em;
+}
+
+#history .imgBox {
+    margin: 0 auto;
+}
+#history .imgBox li {
+    margin-right: 1px;
+    background-color: #f1f1f1;
+}
+#history .imgBox li:last-child {
+    border: none;
+}
+#history .imgBox .txtBox {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 25px 20px;
+    text-align: left;
+    font-weight: 500;
+}
+#history .imgBox .txtBox .date {
+    font-size: 15px;
+    color: #222;
+    line-height: 1;
+}
+#history .imgBox .txtBox .txt {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.4;
+}
+#history .yearBox {
+    width: 1200px;
+    /* text-align: center; */
+    margin: 100px 0;
+    display: inline-block;
+}
+#history .yearBox .yearBoxContents > li::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 1200px;
+    background-color: #ddd;
+}
+
+#history .yearBox .year {
+    float: left;
+    width: 25%;
+    font-size: 40px;
+    /* font-family: ; */
+}
+#history .yearDate {
+    font-family: 'NotoSansKR', sans-serif;
+    display: inline-block;
+    width: 75%;
+    padding: 10px;
+    /* border: 1px solid #f00; */
+}
+#history .yearDate li {
+    font-size: 15px;
+    padding: 0 70px 10px 0;
+    width: 100%;
+    float: left;
+    line-height: 2;
+}
+#history .yearDate li:last-child {
+    padding: 0 70px 0 0;
+}
+#history .yearDate .date {
+    float: left;
+    color: #222;
+    padding-right: 15px;
+    font-weight: 600;
+}
+#history .yearDate .txt {
+    font-weight: 500;
+    float: left;
+    color: #666;
+    padding-right: 30px;
+}
+#history .yearBox ul > li {
+    /* height: 230px; */
+    /* padding: 50px 0; */
+}
+
+/* business_01_products*/
+.productWrap::before {
+    content: '';
+    display: block;
+    width: 1156px;
+    height: 1033px;
+    position: absolute;
+    right: 0;
+    top: 250%;
+    background-image: url('../images/products-bg.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    z-index: 5;
+}
+#subContents.product {
+    /* background-color: transparent; */
+    padding-bottom: 180px;
+}
+#subContents.product .subContentsBox {
+    padding: 0;
+}
+#subContents.product .productList .main h3 {
+    font-size: 51px;
+    line-height: 1.25;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 0.5em;
+    color: #222;
+    padding-bottom: 80px;
+}
+#subContents .productList .main .contentsTxtBox li {
+    display: block;
+    text-align: left;
+}
+
+#subContents .productList .main .contentsTxtBox .txtBox {
+    position: relative;
+}
+
+#subContents .productList .main .contentsTxtBox h4 strong {
+    font-size: 45px;
+    display: block;
+    font-weight: 200;
+    letter-spacing: -0.025em;
+    padding-top: 30px;
+}
+#subContents .productList .main .contentsTxtBox h4 span {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 12px 0;
+    line-height: 1.75;
+    display: block;
+}
+#subContents .productList .main .contentsTxtBox .sub {
+    color: #666;
+}
+#subContents .productList .btn {
+    display: inline-block;
+    padding: 20px 40px;
+    border: 1px solid #333;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+#subContents .productList .btn:before {
+    content: '';
+    display: block;
+    color: #fff;
+    background-color: #333;
+    position: absolute;
+    transform: skewX(-20deg);
+    left: -300%;
+    top: -5%;
+    width: 180%;
+    height: 150%;
+    transition: 0.5s ease;
+    z-index: -1;
+}
+#subContents .productList .btn:hover:before {
+    left: -100px;
+}
+#subContents .productList .btn:hover {
+    color: #fff;
+}
+
+#subContents .productList .contents01 {
+    position: relative;
+    z-index: 2;
+}
+
+#subContents .productList .contents01 .contentsTxtBox {
+    display: inline-block;
+}
+#subContents .productList .contents02 {
+    float: right;
+    width: 40.5%;
+    margin-top: -500px;
+}
+#subContents .productList .contents02 .contentsTxtBox {
+    display: inline-block;
+}
+
+#subContents .productList .contents02 {
+    float: right;
+    width: 40.5%;
+    margin-top: -500px;
+}
+#subContents .productList .contents02 .contentsTxtBox {
+    display: inline-block;
+}
+#subContents .productList .contents03 {
+    position: relative;
+    z-index: 2;
+    margin-top: 70px;
+}
+
+#subContents .productList .contents03 .contentsTxtBox {
+    display: inline-block;
+}
+
+#subContents .productList .plantList {
+    position: relative;
+}
+#subContents .productList .plantList > ul > li {
+    position: relative;
+}
+#subContents .productList .plantList > ul > li:first-child::before {
+    content: '';
+    display: block;
+    margin-top: 120px;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    z-index: 3;
+}
+#subContents .productList .plantList > ul > li::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+}
+#subContents .productList .plantList > ul > li img {
+    padding: 60px 0;
+}
+#subContents .productList .plantList > ul > li .txtbox {
+    display: inline-block;
+    padding-left: 65px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#subContents .productList .plantList > ul > li .txtbox h4 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #222;
+    padding-bottom: 12px;
+}
+#subContents .productList .plantList > ul > li .txtbox .category {
+    color: #222;
+    padding-right: 15px;
+    float: left;
+}
+#subContents .productList .plantList > ul > li .txtbox span {
+    color: #666;
+}
+#subContents .productList .plantList > ul > li .txtbox > ul > li {
+    padding: 5px 0;
+}

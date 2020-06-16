@@ -1,0 +1,628 @@
+:root {
+    --main-color:#6700ff;
+}
+/* 쓸때는 var(--main-color) */
+html {
+    font-size: 16px;
+    
+}
+body {
+    font-family: "Poppins","Noto Sans KR",sans-serif;
+    line-height: 1.5;
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* 기본적인 요소 */
+#header {
+    color: #fff;
+    text-align: center;
+    position: fixed; 
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    transition: 0.5s ease;
+    
+}
+#header.on {
+    background-color: rgba(67,0,255,0.5);
+    box-shadow: 0 5ox 5px  rgba(0,0,0,0.1);
+}
+.logo {
+    position: absolute;
+}
+.gnb .list {
+    display: inline-block;
+}
+.gnb .list > li {
+    float: left;
+    position: relative;
+    
+}
+/* 헤더값 가운데정렬 로고는 왼쪽으로 */
+.gnb .list > li .depth01 {
+    height: 90px;
+    line-height: 90px;
+    padding: 0 30px;
+    transition: 0.5s ease;
+
+}
+.gnb .list > li:hover .depth02 {
+    pointer-events: auto;
+    opacity: 1;
+    top: 100%;
+
+}
+.gnb .list > li:hover .depth02 a {
+    color: #fff;
+}
+
+.list > li .depth02 {
+    border: 1px solid rgba(255,255,255,0.5);
+    text-align: left;
+    padding: 15px 20px;
+    position: absolute;
+    /* width: 100%; 부모넓이를 따라감 */
+    left: 50%;
+    top: 150%;
+    white-space: nowrap;
+    transform: translate(-50%);
+    background-color: rgba(0,0,0,0.8);
+    opacity:0 ;
+    transition: 0.5s ease;
+    pointer-events: none;
+    /* 사용자가 클릭하는 이벤트를 없애는것 대신 후버쪽에 오토로 넣어줘야됌 */
+} 
+.list > li .depth02 a {
+    display: block;
+    padding: 10px 0;   
+}
+#header .list > .depth02 li a:hover {
+    color: #6700ff;
+}
+.list > li .depth02:before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(140, 0, 255);
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    left: -1px;
+    z-index: 1;
+}
+.logo {
+    position: absolute;
+    left: 50px;
+}
+.logo a {
+    display: block;
+    padding: 30px 0;
+}
+.logo img {
+    height: 30px;
+}
+/* 내가한거 시작 */
+
+#mainvisual .txtbox {
+    z-index: 999;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    z-index: 2;
+}
+#mainvisual .txtbox h2 {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+#mainvisual .txtbox h2 strong {
+    font-weight: 100;
+}
+#mainvisual .txtbox p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+.more {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    transition: 0.25s ease;
+}
+.more img {
+    padding-top: 0.5%;
+    padding-left: 10px;
+}
+.more:hover{
+    background-color: blueviolet;
+    border-color: transparent;    
+}
+/* menu :start */
+#menu {
+    margin-top: 100vh;
+}
+#menu .flist li {
+    width: 25%;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+#menu .flist li img {
+    width: 100%;
+    
+    
+
+}
+#menu .flist li:hover .box {
+    transform: scale(1.1);
+    transition: 0.25s ease;
+}
+#menu .flist li .txtbox {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#menu .flist li .txtbox h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+#menu .flist li .txtbox p {
+    line-height: 1.5;
+}
+
+/* product start */
+#product {
+    position: relative;
+    text-align: center;
+    background-color: #171717;
+    color: white;
+    overflow: hidden;
+}
+#product video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#product .txtbox {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 300px 0;
+    position: relative;
+    z-index: 1;
+}
+#product .list {
+    max-width: 1920px;
+    /* 아무리 모니터가 커져도 크기가 벗어나지 않는다 */
+    margin: 0 auto;
+}
+#product .list li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#product .list .contentwrap {
+    width: 1200px;
+    padding: 60px 0;
+    position: relative;
+}
+#product .list .contentwrap > img {
+    width: 100%;
+}
+#product .list .contentwrap .contentbox {
+    position: absolute;
+    width: 320px;
+    height: 50%;
+    top: 20%;
+    background-color: black;
+    text-align: left;
+    padding: 80px 30px 30px;
+    line-height: 1.5;
+}
+#product .list .contentwrap .contentbox a {
+    border: 1px solid blueviolet;
+    display: inline-block;
+    padding: 15px 80px 15px 30px;
+    margin-top: 40px;
+    background: url(../images/arrow.jpg) no-repeat right 30px top 50%;
+    transition: 0.25s ease;
+
+}
+#product .list .contentwrap .contentbox a:hover {
+    background-color: blueviolet;
+    background-position: right 15px top 50%;
+    border-color: blueviolet;
+}
+#product .list .contentwrap .contentbox h3 strong {
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+}
+#product .list .contentwrap .contentbox span {
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 0;
+    transform: translateY(-55%);
+    line-height: 1;
+}
+#product .list li:nth-child(2n+1) .contentwrap{
+    float: right;
+}
+#product .list li:nth-child(2n) .contentwrap{
+    float: left;
+}
+#product .list li:nth-child(2n+1) .contentwrap .contentbox{
+    left: 0;
+    margin-left: -300px;
+}
+#product .list li:nth-child(2n) .contentwrap .contentbox{
+    right: 0;
+    margin-right: -300px;
+}
+.section .txtbox h2 {
+    font-size: 22px;
+    font-weight: 100;
+}
+.section .txtbox .main {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.section .txtbox .sub {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+::selection {
+    background-color: transparent;
+}
+/* 글자 드래그했을때 바뀌는것 */
+
+#consulting {
+    position: relative;
+    text-align: center;
+    background: url("../images/bitmap.jpg") fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+#consulting .box {
+    top: 20%;
+    width: 100%;
+    z-index: 99;
+    padding: 20px;
+}
+#consulting .txtbox {
+    color: #fff;
+}
+#consulting .txtbox h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+    font-weight: 200;
+    line-height: 2.64;
+    font-family: Poppins;
+    letter-spacing: 1.2px;
+}
+#consulting .txtbox .main {
+    font-size: 56px;
+    font-weight: 400;
+    font-family: Noto Sans Korean;
+    line-height: normal;
+}
+#consulting .txtbox .sub {
+    font-size: 22px;
+    margin: 26px 0 32px;
+    font-weight: 700;
+    line-height: 1.27;
+}
+#consulting .txtbox img {
+    padding: 50px;
+    width: 70px;
+}
+.circle {
+    text-align: center;
+    
+}
+.circle li {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(151, 151, 151, 0.424);
+    border-radius: 50%;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+
+}
+.circle li p {
+    height: 100%;
+    width: 100%;
+    margin-top: 50%;
+    color: #fff;
+    font-size: 18px;
+}
+.middle {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 30%;
+    position: relative;
+    padding:23px;
+    background-color: hsla(0,0%,100%,.1);
+    border-radius: 138px;
+    margin: 0 20px;
+    width: 900px;
+}
+.middle ul {
+    position: relative;
+}
+.middle ul:before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: hsla(0,0%,100%,.1);
+    position: absolute;
+    top: 50%;
+    left: -50px;
+}
+.middle ul:after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: hsla(0,0%,100%,.1);
+    position: absolute;
+    top: 50%;
+    right: -50px;
+}
+.middle li {
+    margin: 0 -20px;
+    background-color: #7451ff;
+}
+.middle li:nth-child(1) {
+    margin-left: -20px;
+}
+.middle li:nth-child(4) {
+    margin-left: 45px;
+    background-color: #6700ff;
+}
+
+
+#consulting a {
+    border: 1px solid blueviolet;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 80px 15px 30px;
+    margin-top: 40px;
+    background: url(../images/arrow.jpg) no-repeat right 30px top 50%;
+    transition: 0.25s ease;
+
+}
+#consulting a:hover {
+    background-color: blueviolet;
+    background-position: right 15px top 50%;
+    border-color: blueviolet;
+}
+#news {
+    background-color: #fff;
+    height: 770px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+#news .hi {
+    width: 100%;
+}
+#news .txtbox h2 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 2.64;
+    font-family: Poppins;
+    letter-spacing: 1.2px;
+    padding-bottom: 30px;
+}
+#news .txtbox p {
+    padding-bottom: 50px;
+}
+#news img {
+    width: 260px;
+    height: 170px;
+}
+#news ul li {
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px;
+
+    
+}
+#news ul p {
+    margin-top: 30px;
+    
+    
+}
+
+#news ul p:after {
+    content: "";
+    border: 1px solid #999;
+    width: 15px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* 보더 안쓰고 높이랑 넓이만 설정해도됌, 높이넓이+백그라운드컬러 */
+}
+#news a {
+    display: inline-block;
+    border: 1px solid #6700ff;
+    background: url(../images/arrow.jpg) no-repeat right 30px top 50%;
+    transition: 0.25s ease;
+    padding: 20px 50px 20px 40px;
+    margin-top: 50px;
+}
+#news a:hover {
+    background-color: blueviolet;
+    background-position: right 15px top 50%;
+    border-color: blueviolet;
+}
+
+
+#news ul span {
+    font-size: 13px;
+    color: #999;
+}
+#career {
+    background: url("../images/bitmap\ \(1\).jpg") 50%;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 9999;
+}
+#career .txtbox {
+    padding: 300px 0 50px;
+}
+#career .txtbox .main {
+    font-size: 40px;
+    font-weight: 100;
+}
+#career .txtbox .main strong {
+    font-weight: 500;
+}
+#career .count {
+    text-shadow: none;
+    color: #3a3a3c;
+    font-size: 210px;
+    font-weight: 700;
+    margin: 18px 0 36px;
+}
+#contact {
+    height: 300px;
+    background: url("../images/img_main_contact.jpg") no-repeat, url("../images/img_main_contact_v_cut.jpg") no-repeat;
+    color: #fff;
+    background-color: black;
+    position: relative;
+    z-index: 9999;    
+}
+
+#contact .txt {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    font-size: 22px;
+    font-weight: 100;
+    font-family: Poppins;
+}
+#contact .txt a {
+    font-weight: 300;
+
+}
+#contact .btns {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+#contact .btns a {
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+    border: 1px solid #fff;
+    transition: 0.5s ease;
+}
+#contact .container {
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+#contact .btns a:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+#contact .btns .demo {
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+}
+#footer {
+
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+#footer .txtbox {
+    position: absolute;
+    float: left;
+    margin-left: 100px;
+    color: #ccc;
+    font-family: Noto Sans Korean;
+    font-weight: 300;
+    font-size: 13px;
+    display: inline-block;
+    left: 15%;
+    line-height: 20px;
+    width: auto;
+}
+#logo01 img {
+    position: absolute;
+    display: inline-block;
+    width: 180px;
+
+}
+#footer .box{
+    height: 140px;
+    padding: 60px 0;
+    padding-left: 50px;
+    position: relative;
+}
+#footer .txtbox li {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+}
+#footer .txtbox li:after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    display: inline-block;
+    margin-left:20px;
+}
+#footer p {
+    padding-top: 50px;
+}
+#footer .logobox {
+    margin-top: 20px;
+}
+#footer .logobox li {
+    float: left; 
+}
+#footer .logobox li img {
+    width: 30px;
+    height: 30px;
+}
+#footer .logobox li:after {
+    display: none;
+}

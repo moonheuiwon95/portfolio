@@ -1,0 +1,16 @@
+#mainvisual {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+#mainvisual video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* 비디오 화면에 맞추기 */

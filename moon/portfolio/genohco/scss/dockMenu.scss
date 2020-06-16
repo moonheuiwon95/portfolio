@@ -1,0 +1,90 @@
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    background-color: #222;
+    color:#999;
+    font-family: "Roboto","Noto Sans KR";
+}
+h1 {
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+    margin: 100px 0;
+    width:100%;
+    color:#fff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    font-size: 2rem;
+    overflow: hidden;
+    .dockMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#333;
+        width:500px;
+        li {
+            position: relative;
+            margin: 0 5px;
+            transition: 0.25s ease-in-out;
+            flex: 0 0 20%;
+            align-self: flex-end;
+            &:nth-child(5n+1) .inner {
+                background-color: rgb(186, 226, 10);
+            }
+            &:nth-child(5n+2) .inner {
+                background-color: rgb(18, 162, 219);
+            }
+            &:nth-child(5n+3) .inner {
+                background-color: rgb(236, 132, 13);
+            }
+            &:nth-child(5n+4) .inner {
+                background-color: rgb(231, 55, 193);
+            }
+            &:nth-child(5n) .inner {
+                background-color: rgb(221, 51, 51);
+            }
+            
+            &:hover {
+                //flex: 0 0 30%;
+                .inner {
+                    font-size: 2rem;
+                }
+            }
+            .inner {
+                position: absolute;
+                width:100%;
+                height: 100%;
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+                border-radius: 1000px;
+                background-color: #fff;
+                left:0;
+                top:0;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:#fff;
+                font-weight: 700;
+                font-size: 1.2rem;
+                transition: 0.25s ease-in-out;
+
+                
+            }
+            &:before {
+                content: '';
+                display: block;
+                padding-top: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+$base_color:#333;
+$main_color:rgba(236,28,42,1);
+$sub_color:rgb(255,111,56);
+$max_width:1720px;
+$auto_width:1280px;
+@mixin verticalCenter($h) {
+    display: block;
+    height: $h;
+    line-height: $h;
+}
+@mixin line($line:1,$lh:1.5em){
+    line-height: $lh;
+    height: $lh*$line;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    overflow: hidden;
+}
+@mixin gradient($degree){
+    background: rgb(255,111,56);
+    background: linear-gradient($degree, rgba(255,111,56,1) 0%, rgba(236,28,42,1) 100%);
+}
+

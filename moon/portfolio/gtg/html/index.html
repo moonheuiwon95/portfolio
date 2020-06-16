@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTG Wellness</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/fullpage.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/greensock/gsap.min.js"></script>
+    <script src="../js/greensock/CSSRulePlugin.min.js"></script>
+    <script src="../js/fullpage.min.js"></script>
+    <script defer src="../js/main.js"></script>
+</head>
+<body>
+    <div id="skip">
+        <a href="#mainContents">본문바로가기</a>
+        <!-- 접근성 마크 획득하기 위한 요소 -->
+    </div>
+    <header id="header">
+        <h1 id="logo">
+            <a href="">
+                <img src="../images/layout/logo.png" alt="" class="white">
+                <img src="../images/layout/logoRed.png" alt="" class="color">
+            </a>
+        </h1>
+        <nav id="gnb">
+            <h2 class="hidden">global navigation</h2>
+            <? include("../include/gnb.html"); ?>
+        </nav>
+        <div class="util">
+            <div class="language">
+                <a href="">KOR <i class="xi-angle-down"></i></a>
+                <ul>
+                    <li><a href="">KOR</a></li>
+                    <li><a href="">ENG</a></li>
+                    <li><a href="">CHI</a></li>
+                </ul>
+            </div>
+            <button class="btnAll">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <!-- header end -->
+    <div id="main">
+        <div id="mainVisual" class="section">
+            <ul class="swiper-wrapper">
+                <li class="visual01 swiper-slide">
+                    <div class="infoBox">
+                        <p class="main"><img src="../images/main/cellskin.png" alt=""></p>
+                        <p class="sub">
+                            Premium Hand Cleaner Gel <br>
+                            CLEAN PINE GEL
+                        </p>
+                        <a href="">CLICK HERE</a>
+                    </div>
+                    <div class="bg"></div>
+                </li>
+                <li class="visual02 swiper-slide">
+                    <div class="infoBox">
+                        <p class="main"><img src="../images/main/leshape.png" alt=""></p>
+                        <p class="sub">
+                            The new concept of <br>
+                            Diode laser system using 1060nm
+                        </p>
+                        <a href="">CLICK HERE</a>
+                    </div>
+                    <div class="bg"></div>
+                </li>
+                <li class="visual03 swiper-slide">
+                    <div class="infoBox">
+                        <p class="main"><img src="../images/main/pico.png" alt=""></p>
+                        <p class="sub">
+                            The Advanced 300 picosecond Laser
+                        </p>
+                        <a href="">CLICK HERE</a>
+                    </div>
+                    <div class="bg"></div>
+                </li>
+                <li class="visual04 swiper-slide">
+                    <div class="infoBox">
+                        <p class="main"><img src="../images/main/15743159623 (1).png" alt=""></p>
+                        <p class="sub">
+                            Dual transducer professional HIFU
+                        </p>
+                        <a href="">CLICK HERE</a>
+                    </div>
+                    <div class="bg"></div>
+                </li>
+                <li class="visual05 swiper-slide">
+                    <div class="infoBox">
+                        <p class="main"><img src="../images/main/opera mask.png" alt=""></p>
+                        <p class="sub">
+                            LED Mask for Face and <br>
+                            Neck Full skin care
+                        </p>
+                        <a href="">CLICK HERE</a>
+                    </div>
+                    <div class="bg"></div>
+                </li>
+            </ul>
+            <div class="pagination">
+                <div class="bullets">
+                </div>
+                <div class="auto btns">
+                    <button class="btn btnStop"><i class="xi-pause"></i></button>
+                    <button class="btn btnPlay"><i class="xi-play"></i></button>
+                </div>
+            </div>
+            <div class="grid">
+                <ul>
+                    <li><p>BEAUTY SOLUTION</p></li>
+                    <li><p>GOOD TO GREAT YOUR PARTNER</p></li>
+                    <li><p>GTG WELLNESS</p></li>
+                </ul>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li>
+                        <a href="GTG블로그 바로가기">
+                            <i class="xi-naver-square"></i>
+                            <span>GTG Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="페이스북 바로가기">
+                            <i class="xi-facebook-official"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="인스타그램 바로가기">
+                            <i class="xi-instagram"></i>
+                            <span>instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cover">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- mainVisual end -->
+        <div id="medical" class="section">
+            <div class="items">
+                <div class="img01 img">
+                    <img src="../images/layout/01.png" alt="">
+                </div>
+                <div class="img02">
+                    <img src="../images/layout/02.png" alt="">
+                </div>
+                <div class="img03 img">
+                    <img src="../images/layout/03.png" alt="">
+                </div>
+            </div>
+            <div class="grid">
+                <ul>
+                    <li><p>MEDICAL</p></li>
+                    <li><p>MEDICAL</p></li>
+                    <li><p>MEDICAL</p></li>
+                </ul>
+            </div>
+            <div class="snsBox">
+                <ul>
+                    <li>
+                        <a href="Medical 바로가기">
+                            <i class="xi-plus-square"></i>
+                            <span>Medical</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Aesthetic 바로가기">
+                            <i class="xi-sketch"></i>
+                            <span>Aesthetic</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Home Aesthetic 바로가기">
+                            <i class="xi-home-o"></i>
+                            <span>Home <br> Aesthetic</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Cosmetic 바로가기">
+                            <i class="xi-color-dropper"></i>
+                            <span>Cosmetic</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Body Analyzers 바로가기">
+                            <i class="xi-run"></i>
+                            <span>Body <br> Analyzers</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottomTxt">
+                MEDICAL
+            </div>
+        </div>
+        <!-- medical end -->
+        <div id="global" class="section">
+            <ul class="mapList">
+                <li>
+                    <span class="circle"></span>
+                    <span class="txt">EUROPE</span>
+                </li>
+                <li>
+                    <span class="circle"></span>
+                    <span class="txt">MIDDLE EAST</span>
+                </li>
+                <li>
+                    <span class="circle"></span>
+                    <span class="txt">AFRICA</span>
+                </li>
+                <li>
+                    <span class="circle"></span>
+                    <span class="txt">ASIA</span>
+                </li>
+                <li>
+                    <span class="circle"></span>
+                    <span class="txt">AUSTRALIA</span>
+                </li>
+                <li>
+                    <span class="circle"></span>
+                    <span class="txt">NORTH AMERICA</span>
+                </li>
+                <li>
+                    <span class="circle"></span>
+                    <span class="txt">SOUTH AMERICA</span>
+                </li>
+                <li class="real">
+                    <span class="marker"><i class="xi-maker"></i></span>
+                    <span class="txt">CHINA</span>
+                </li>
+                <li class="real">
+                    <span class="marker"><i class="xi-maker"></i></span>
+                    <span class="txt">VIETNAM</span>
+                </li>
+                <li class="real">
+                    <span class="marker"><i class="xi-maker"></i></span>
+                    <span class="txt">MALAYSIA</span>
+                </li>
+                <li class="real">
+                    <span class="korea"><span class="circle"></span><img src="../images/main/map_logo.png" alt=""></span>
+                    <div class="wave">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+            <div class="bottomTxt">
+                <p class="main">
+                    <span class="red">G</span>LOBAL <br>
+                    NETWORK <br>
+                </p>
+                장기간 축적된 해외 유통 노하우를 바탕으로 <br>
+                글로벌 네트워크 구축
+            </div>
+            <div class="grid">
+                <ul>
+                    <li><p>GLOBAL NETWORK</p></li>
+                    <li><p>MEDICAL SYSTEM</p></li>
+                    <li><p>HUMAN HEALTH</p></li>
+                </ul>
+            </div>
+            <div class="snsBox">
+                <ul>
+                    <li>
+                        <a href="기업개요 바로가기">
+                            <i class="xi-command"></i>
+                            <span>기업개요</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="회사연혁 바로가기">
+                            <i class="xi-city"></i>
+                            <span>회사연혁</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="공시정보 바로가기">
+                            <i class="xi-percent"></i>
+                            <span>공시정보</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="글로벌 네트워크 바로가기">
+                            <i class="xi-globus"></i>
+                            <span>글로벌 <br> 네트워크</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- global end -->
+        <div id="media" class="section">
+            <div class="bottomTxt">
+                <p class="main">
+                    <span class="red">M</span>EDIA & <br>
+                    NEWS ROOM <br>
+                </p>
+                당신의 좋은 파트너, 지티지웰니스의 <br>
+                다양한 소식과 미디어를 지금 만나보세요.
+            </div>
+            <div class="btns">
+                <button class="btnPrev"><i class="xi-angle-left"></i></button>
+                <button class="btnNext"><i class="xi-angle-right"></i></button>
+            </div>
+            <div class="sliderWrap clearFix">
+                <div class="mainBox">
+                    <div class="imgSlider">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><img src="../images/main/001.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="../images/main/002.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="../images/main/09.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="../images/main/07.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="../images/main/06.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="../images/main/05.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="txtSlider">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <p class="category">NOTICE</p>
+                                <p class="title">지티지웰니스, 터키 SRC와 손세정겔 100만 상자 공급 계약 체결</p>
+                                <p class="txt">
+                                    지난 16일 지티지웰니스는 터키 SRC와 ‘셀스킨 프리미엄 휴대용 손 세정 겔’의 연간 공급 계약을 체결하였다. 
+    
+                                        SRC는 온라인 및 SNS를 통해 터키 전역에 핸드폰 관련 액세서리, 파워뱅크 등을 판매하며, 이스탄불 내 약국에 
+    
+                                        자사 제품인 르바디 세럼과 장비를 진열 및 판매를 하고 있는 업체이다.
+                                        따라서 이번 계약으로 ‘셀스킨 프리미엄 휴대용 손 세정 겔’ 100만 상자를 터키 SRC에 공급할 예정이며, 
+    
+                                        이 외에 미국, 유럽, 일본, 호주, 싱가포르, 홍콩 등의 대리점과 공급 계약을 체결하여 제품 생산과 동시에 해외 수출을 시작하였다.
+                                        
+                                        특히 이번에 새로 출시된 손 세정 겔은 기존 세정 겔 보다 보습과 진정 기능이 강화된 제품으로 초도 물량 12만 상자가 
+    
+                                        하루 만에 완판 되는 등 많은 관심을 받고 있어 일일 6만 상자 생산을 목표로 현재 지속적인 물량 확보를 위해 설비를 확장하고 있다.
+    
+                                        이번 계약은 지티지웰니스가 기존에 확보하였던 글로벌 네트워크를 활용한 회사의 신뢰도와 유연한 대응 덕분에 빠른 수출로 확보가 가능 하였다.
+    
+                                        한편, 추가적으로 버섯추출물 향균 스프레이와 비누를 출시하여 해외 시장 진입에 나설 계획이다. 
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <p class="category">NOTICE</p>
+                                <p class="title">지티지웰니스, 대구지역 코로나 19 극복을 위해 힘쓰는 의료진에게 프리미엄 손세정제 기부</p>
+                                <p class="txt">
+                                    ㈜지티지웰니스는 지난 9일 코로나19 피해 확산에 대한 방지와 조기 극복을 위하여 힘쓰고 있는 대구지역의 
+                                    의료진들을 위해서 생산하고 있는 프리미엄 손세정겔 10,000박스(20만회 사용 분)를 기부하였다.
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <p class="category">NOTICE</p>
+                                <p class="title">셀스킨, "Clean pine gel" 프리미엄 휴대용 손세정 겔</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <p class="category">NOTICE</p>
+                                <p class="title">스노스탑 플러스 HOW TO USE</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <p class="category">NOTICE</p>
+                                <p class="title">지티지웰니스 회사 홍보영상</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <p class="category">NOTICE</p>
+                                <p class="title">비비립(BIBILIP) HOW TO USE - Version 1</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="listBox">
+                    <div class="mask">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="../images/main/001.jpg" alt="">
+                                <div class="desc">
+                                    <p class="category">VIDEO</p>
+                                    <p class="title">
+                                        지티지웰니스, 터키 SRC와 손세정겔 100만 상자 공급 계약 체결
+                                    </p>
+                                    <p class="txt">
+                                        지난 16일 지티지웰니스는 터키 SRC와 ‘셀스킨 프리미엄 휴대용 손 세정 겔’의 연간 공급 계약을 체결하였다. 
+    
+                                        SRC는 온라인 및 SNS를 통해 터키 전역에 핸드폰 관련 액세서리, 파워뱅크 등을 판매하며, 이스탄불 내 약국에 
+    
+                                        자사 제품인 르바디 세럼과 장비를 진열 및 판매를 하고 있는 업체이다.
+                                        따라서 이번 계약으로 ‘셀스킨 프리미엄 휴대용 손 세정 겔’ 100만 상자를 터키 SRC에 공급할 예정이며, 
+    
+                                        이 외에 미국, 유럽, 일본, 호주, 싱가포르, 홍콩 등의 대리점과 공급 계약을 체결하여 제품 생산과 동시에 해외 수출을 시작하였다.
+    
+                                        특히 이번에 새로 출시된 손 세정 겔은 기존 세정 겔 보다 보습과 진정 기능이 강화된 제품으로 초도 물량 12만 상자가 
+    
+                                        하루 만에 완판 되는 등 많은 관심을 받고 있어 일일 6만 상자 생산을 목표로 현재 지속적인 물량 확보를 위해 설비를 확장하고 있다.
+    
+                                        이번 계약은 지티지웰니스가 기존에 확보하였던 글로벌 네트워크를 활용한 회사의 신뢰도와 유연한 대응 덕분에 빠른 수출로 확보가 가능 하였다.
+    
+                                        한편, 추가적으로 버섯추출물 향균 스프레이와 비누를 출시하여 해외 시장 진입에 나설 계획이다. 
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="../images/main/002.jpg" alt="">
+                                <div class="desc">
+                                    <p class="category">VIDEO</p>
+                                    <p class="title">
+                                        지티지웰니스, 대구지역 코로나 19 극복을 위해 힘쓰는 의료진에게 프리미엄 손세정제 기부
+                                    </p>
+                                    <p class="txt">
+                                        ㈜지티지웰니스는 지난 9일 코로나19 피해 확산에 대한 방지와 조기 극복을 위하여 힘쓰고 있는 대구지역의 
+                                        의료진들을 위해서 생산하고 있는 프리미엄 손세정겔 10,000박스(20만회 사용 분)를 기부하였다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="../images/main/09.jpg" alt="">
+                                <div class="desc">
+                                    <p class="category">VIDEO</p>
+                                    <p class="title">
+                                        셀스킨, "Clean pine gel" 프리미엄 휴대용 손세정 겔
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="../images/main/07.jpg" alt="">
+                                <div class="desc">
+                                    <p class="category">VIDEO</p>
+                                    <p class="title">
+                                        스노스탑 플러스 HOW TO USE
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="../images/main/06.jpg" alt="">
+                                <div class="desc">
+                                    <p class="category">VIDEO</p>
+                                    <p class="title">
+                                        지티지웰니스 회사 홍보영상
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="../images/main/05.jpg" alt="">
+                                <div class="desc">
+                                    <p class="category">VIDEO</p>
+                                    <p class="title">
+                                        비비립(BIBILIP) HOW TO USE - Version 1
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="bullets">
+                </div>
+            </div>
+            <div class="grid">
+                <ul>
+                    <li><p>GLOBAL NETWORK</p></li>
+                    <li><p>MEDICAL SYSTEM</p></li>
+                    <li><p>HUMAN HEALTH</p></li>
+                </ul>
+            </div>
+            <div class="snsBox">
+                <ul>
+                    <li>
+                        <a href="뉴스 룸 바로가기">
+                            <i class="xi-new-o"></i>
+                            <span>뉴스 룸</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="홍보영상 바로가기">
+                            <i class="xi-play-circle-o"></i>
+                            <span>홍보영상</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="행사일정 바로가기">
+                            <i class="xi-calendar-check"></i>
+                            <span>행사일정</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="eShop 바로가기">
+                            <i class="xi-cart-o"></i>
+                            <span>eShop</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="faq" class="section">
+            <h2>FAQ</h2>
+            <ul class="faqList">
+                <li>
+                    <dl>
+                        <dt>여객운수법 81조 유상운송 및 출 . 퇴근 카풀 예외 조항</dt>
+                        <dd>제81조(자가용 자동차의 유상운송 금지)
+                            ① 사업용 자동차가 아닌 자동차(이하 “자가용자동차”라 한다)를 유상(자동차 운행에 필요한 경비를 포함한다. 이하 이 조에서 같다)으로 운송용으로 제공하거나 임대하여서는 아니 되며, 누구든지 이를 알선하여서는 아니 된다. 다만, 다음 각 호의 어느 하나에 해당하는 경우에는 유상으로 운송용으로 제공 또는 임대하거나 이를 알선할 수 있다. (개정 2013.3.23., 2015.6.22.)
+                            
+                            1. 출퇴근 때 승용자동차를 함께 타는 경우
+                            2. 천재지변, 긴급 수송, 교육 목적을 위한 운행, 그 밖에 국토교통부령으로 정하는 사유에 해당되는 경우로서 특별자치도지사•시장•군수•구청장(자치구의 구청장을 말한다. 이하 같다)의 허가를 받은 경우
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>보험표준약관에 보험금미지급사유 및 동승자 지급률 예외 조항</dt>
+                        <dd>자동차보험 표준약관 (보험금 면책사유)
+                            6. 영리를 목적으로 요금이나 대가를 받고 피보험자동차를 반복적으로 사용하거나 빌려 준 때에 생긴 손해. 다만, 임대차계약(계약기간이 30일을 초과하는 경우에 한함)에 따라 임차인이 피보험자동차를 전속적으로 사용하는 경우에는 보상합니다. 그러나 임차인이 피보험자동차를 영리를 목적으로 요금이나 대가를 받고 반복적으로 사용하는 경우에는 보상하지 않습니다.
+                            
+                            자동차보험 표준약관 (동승자보상기준)
+                            다만, 교통난 완화 및 제조업 경쟁력 강화를 위한 교통소통 대책의 일환으로 시행하는 ‘승용차 함께 타기(카풀)’에서 출•퇴근 중 사고는 예외적으로 동승자 감액 비율을 적용하지 않는다.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>금감원등 유관업계 의견</dt>
+                        <dd>보험사 관계자
+                            예를 들어, 운전자 A가 카풀로 한 달에 약 20만~30만원을 벌었다고 하면, 보험사와 금융당국 관계자들은 “유상운송으로 보기 어렵다”고 말합니다. 왜냐하면, 운전자 A가 운전을 하면서 드는 비용들(주유비 등)을 고려하면, 한 달 20만~30만원의 돈을 영리 목적으로 벌었다고 보기는 어렵기 때문입니다.
+                            
+                            금감원 관계자
+                            원칙적으로 보험사가 보상을 해줘야 한다. 보험사가 유상운송을 면책 사유로 적어놓은 이유는 일반 차량과 유상운송 차량 간 위험률이 차이가 나기 때문인데, 출퇴근 때 카풀은 운전자가 매번 가던 길을 운전하는 거라 위험률이 상승할 이유가 없다고 판단하기 때문입니다.
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <footer id="footer" class="section fp-auto-height">
+            <div class="container">
+                <div class="util clearFix">
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Location</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="title">T.</span>
+                            <span>+82.2.3462.5400</span>
+                        </li>
+                        <li>
+                            <span class="title">F.</span>
+                            <span>+82.2.3462.5105</span>
+                        </li>
+                        <li>
+                            <span class="title">E.</span>
+                            <span>gtg@gtgwellness.co.kr/gtgtax@gtgwellness.co.kr</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="address clearFix">
+                    <dl>
+                        <dt>Main Office</dt>
+                        <dd>
+                            <span>7Dongwonro-(Dongwon-dong),Bundang-gu,Seongnam-si,Gyeonggi-do,Republic of Korea</span>
+                        </dd>
+                        <dt>Business Hours</dt>
+                        <dd>
+                            <span>Monday – Friday 09:30 am – 06:00 pm</span>
+                        </dd>
+                    </dl>
+                </div>
+                <p class="copyright">
+                    © 2019 <span class="red">GTG</span>WELLNESS. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <aside id="sitemap">
+        <h2 class="hidden">sitemap</h2>
+        <? include("../include/gnb.html"); ?>
+        <button class="btnClose">
+            <i class="xi-close"></i>
+        </button>
+    </aside>
+</body>
+</html>

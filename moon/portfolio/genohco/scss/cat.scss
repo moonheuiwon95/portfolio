@@ -1,0 +1,45 @@
+.container {
+    width: 1200px;
+    margin: 100px auto;
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 20px;
+        margin-bottom: 50px;
+    }
+    .list {
+        display: flex;
+        // flex-direction: row;
+        li {
+            width: 33.33%;
+            overflow: hidden;
+            position: relative;
+            transition: 0.25s ease-in-out;
+            display: flex;
+            &:hover {
+                width: 50%;
+            }
+            .contents {
+                background-color: #000;
+                color: #fff;
+                padding: 30px;
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                right: 30px;
+                overflow: hidden;
+                h2 {
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
+                p {
+                    line-height: 1.5;
+                    width: 300px;
+                }
+            }
+            img {
+                height: 500px;
+            }
+        }
+    }
+}

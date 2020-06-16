@@ -1,0 +1,26 @@
+#mainvisual {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#mainvisual video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+#mainvisual .txtbox .main {
+  font-size: 48px;
+  color: #FFff;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+#mainvisual .txtbox .main strong {
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */

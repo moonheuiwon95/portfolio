@@ -1,0 +1,33 @@
+$base_color:#333;
+$main_color:#cf0a2c;
+$max_width:1720px;
+$auto_width:1280px;
+
+@mixin verticalCenter($h) {
+    height: $h;
+    line-height: $h;
+}
+// @mixin center {
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%,-50%);
+// }
+// @mixin bottomLine($w:100%,$h:1px,$bg_color:$base_color) {
+//     content: "";
+//     display: block;
+//     width: $w;
+//     height: $h;
+//     background-color: $bg_color;
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+// }
+@mixin line($line:1, $lh:1.5em){
+    line-height: $lh;
+    height: $lh*$line;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    overflow: hidden;
+}

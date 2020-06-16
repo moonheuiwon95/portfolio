@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 600px;
+
+            /* flex-direction: row;
+            flex-wrap: nowrap; */
+            /* justify-content:space-around; */
+            /* overflow: hidden; */
+            /* align-items: center; */
+            /* align-content:flex-start; */
+        }
+        .item {
+            padding:30px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .item01 {
+            background-color: rgb(236, 52, 52);
+            flex: 1;
+        }
+        .item02 {
+            background-color: rgb(43, 162, 231);
+            flex: 3;
+        }
+        .item03 {
+            background-color: rgb(102, 221, 23);
+            flex: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item01">
+            <h2>ITEM01</h2>
+            <p>Lorem ipsum </p>
+            <p>Lorem ipsum </p>
+        </div>
+        <div class="item item02">
+            <h2>ITEM02</h2>
+            <p>Lorem ipsum dolor </p>
+            <p>Lorem ipsum dolor </p>
+            <p>Lorem ipsum dolor </p>
+            <p>Lorem ipsum dolor </p>
+        </div>
+        <div class="item item03">
+            <h2>ITEM03</h2>
+            <p>Lorem, ipsum dolor sit amet </p>
+        </div>
+    </div>
+</body>
+</html>

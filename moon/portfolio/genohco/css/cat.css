@@ -1,0 +1,57 @@
+.container {
+  width: 1200px;
+  margin: 100px auto;
+}
+
+.container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 20px;
+  margin-bottom: 50px;
+}
+
+.container .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .list li {
+  width: 33.33%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .list li:hover {
+  width: 50%;
+}
+
+.container .list li .contents {
+  background-color: #000;
+  color: #fff;
+  padding: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  overflow: hidden;
+}
+
+.container .list li .contents h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container .list li .contents p {
+  line-height: 1.5;
+  width: 300px;
+}
+
+.container .list li img {
+  height: 500px;
+}

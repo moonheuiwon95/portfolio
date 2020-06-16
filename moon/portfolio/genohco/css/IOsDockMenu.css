@@ -1,0 +1,109 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto","Noto Sans KR";
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .dockMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+  outline: 1px solid #f00;
+}
+
+.container .dockMenu li {
+  text-align: center;
+  color: #fff;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  position: relative;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.container .dockMenu li:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.container .dockMenu li:nth-child(1) .inner {
+  background-color: palevioletred;
+}
+
+.container .dockMenu li:nth-child(2) .inner {
+  background-color: royalblue;
+}
+
+.container .dockMenu li:nth-child(3) .inner {
+  background-color: seagreen;
+}
+
+.container .dockMenu li:nth-child(4) .inner {
+  background-color: slateblue;
+}
+
+.container .dockMenu li:nth-child(5) .inner {
+  background-color: violet;
+}
+
+.container .dockMenu li:nth-child(6) .inner {
+  background-color: darkred;
+}
+
+.container .dockMenu li:nth-child(7) .inner {
+  background-color: darkslategray;
+}
+
+.container .dockMenu li .inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

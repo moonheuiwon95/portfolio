@@ -1,0 +1,57 @@
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto","Noto Sans KR";
+}
+.container {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    .dockMenu {
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        outline: 1px solid #f00;
+        li {
+            text-align: center;
+            color: #fff;
+            flex-shrink: 1; //여백이 없을때
+            flex-grow: 0; //여백이 남았을때
+            flex-basis: 20%;
+            position: relative;
+            transition: 0.25s ease-in-out;
+            align-self: flex-end;
+            &:before {
+                content: '';
+                display: block;
+                padding-top: 100%;
+            }
+            &:nth-child(1) .inner {background-color: palevioletred;}
+            &:nth-child(2) .inner {background-color: royalblue;;}
+            &:nth-child(3) .inner {background-color: seagreen;}
+            &:nth-child(4) .inner {background-color: slateblue;}
+            &:nth-child(5) .inner {background-color: violet;}
+            &:nth-child(6) .inner {background-color: darkred;}
+            &:nth-child(7) .inner {background-color: darkslategray;}
+            .inner {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                border-radius: 1000px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,259 @@
+body {
+    
+}
+#mainVisual .imgBox img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#mainVisual .title {
+    position: absolute;
+    top: 40%;
+    margin-left: 50px;
+    color: #fff;
+    text-align: center;
+    right: 50%;
+    transform: translateX(50%);
+}
+#mainVisual .title p {
+    font-size: 24px;
+    font-family: Noto Sans Korean;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 80px;
+
+}
+#mainVisual .title > img {
+    position: absolute;
+    display: block;
+    right: 50%;
+    top: 15%;
+    
+}
+#mainVisual .title span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#mainVisual .title strong {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Poppins;
+    letter-spacing: 1.2px;
+    display: block;
+}
+#mainVisual .skill {
+    margin-top: 10px;
+}
+#core {
+    background-color: #1a1e24;
+    width: 100%;
+    height: 550px;
+    color: #fff;
+}
+#core .txtBox {
+    padding: 80px 350px;
+} 
+#core .txtBox strong {
+    font-size: 40px;
+    word-break: keep-all;
+}
+#core .txtBox p {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.clist {
+    padding: 150px 350px;
+    color: #1a1a1b;
+}
+.clist li {
+    margin: -24px 0;
+}
+.clist li:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1200px;
+    height: 1px;
+    margin: -13px;
+    background-color: #d8d8d8;
+}
+.clist li:last-child:after {
+    display: none;
+}
+#list .box {
+    display: table-cell;
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #e6e5e6;
+    font-size: 16px;
+    font-weight: 500;
+}
+#list .box img {
+    width: 120px;
+    padding-top: 32px;
+}
+
+#list .box p {
+    font-weight: 600;
+}
+#list .tbox {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 80px;
+    width: calc(100% - 300px);
+}
+
+#list .tbox p {
+    font-size: 19px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+#list .tbox span {
+    font-size: 15px;
+}
+#ar {
+    position: relative;
+    margin-bottom: 250px;
+}
+#ar .txt{
+    background: url("../images/img-pd-core-usecase-bg.58a1ae4.png");
+    width: 100%;
+    height: 540px;
+    color: #fff;
+  
+}
+#ar .txtbox strong {
+    font-size: 36px;
+    margin-bottom: 32px;
+    
+
+}
+
+#ar .swiper-container {
+    width: 1000px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+#ar .swiper-container img {
+    width: 1000px;
+}
+#ar .txtbox {
+    padding: 150px 400px;
+}
+#ar .txtbox p {
+    padding: 10px 0;
+}
+
+#ar .number {
+    position: absolute;
+    right: 60%;
+}
+#ar .number button {
+    display: inline-block;
+}
+#ar .number > p {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    transform: translateY(10px);
+
+}
+
+#contactbox {
+    height: 300px;
+    background: url("../images/img_main_contact.jpg") no-repeat , url("../images/img_main_contact_v_cut.jpg") no-repeat;
+    color: #fff;
+    background-color: black;
+    position: relative;
+
+}
+
+#contactbox .txt {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+#contactbox .btns {
+    display: inline-block;
+    margin-top: 50px;
+
+}
+#contactbox .btns a {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+    border: 1px solid transparent;
+    background-color: var(--main-color);
+    margin-left: 10px;
+    transition: 0.5s ease;
+}
+#contactbox .btns img {
+    transform: translateY(350%);
+    transition: 0.3s ease;
+}
+#contactbox .container {
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+#contactbox .btns a:hover img{
+    transform: translateY(350%) translateX(10px);
+    
+}
+#contactbox .btns a:hover {
+    background-color: #4701af;
+}
+#footer .top {
+    background-color: #6700ff;
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    top: -30px;
+    right: 70px;
+    position: absolute;
+    font-size: 13px;
+    font-family: "Roboto";
+    
+}
+#footer .top img {
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    transform: translateX(50%);
+}
+#footer .list{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+#footer .list a {
+    width: 198px;
+    padding: 15px 24px;
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+    background-color: #1d1c20;
+    transition: 0.3s ease;
+    position: relative;
+}
+#footer .list a:hover {
+    color: #6700ff
+}
+#footer .list img {
+    position: absolute;
+    width: 12px;
+    right: 10%;
+    top: 50%;
+}

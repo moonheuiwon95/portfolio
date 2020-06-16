@@ -1,0 +1,503 @@
+#mainVisual {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#mainVisual .visualList li {
+  min-height: 100vh;
+}
+
+#mainVisual .visualList li .img {
+  background-size: cover;
+  background-position: 50%;
+  min-height: 100vh;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 3s 1s ease-in-out;
+  transition: 3s 1s ease-in-out;
+}
+
+#mainVisual .visualList li.visual01 .img {
+  background-image: url("../images/main/main_visual_01.jpg");
+}
+
+#mainVisual .visualList li.visual02 .img {
+  background-image: url("../images/main/main_visual_02.jpg");
+}
+
+#mainVisual .visualList li.visual03 .img {
+  background-image: url("../images/main/main_visual_03.jpg");
+}
+
+#mainVisual .visualList li.visual04 .img {
+  background-image: url("../images/main/main_visual_04.jpg");
+}
+
+#mainVisual .visualList li.visual05 .img {
+  background-image: url("../images/main/main_visual_05.jpg");
+}
+
+#mainVisual .visualList li.swiper-slide-active .img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 3s 1s ease-in-out;
+  transition: 3s 1s ease-in-out;
+}
+
+#mainVisual .visualList li.swiper-slide-duplicate-active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#mainVisual .slogan {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#mainVisual .slogan .ani {
+  width: 106px;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+}
+
+#mainVisual .slogan p {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 1.05em;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#mainVisual .pagination {
+  height: 100%;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 5;
+}
+
+#mainVisual .pagination:before {
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  content: '';
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#mainVisual .pagination ul {
+  width: 300px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  color: #fff;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#mainVisual .pagination ul li.on a:before {
+  width: 70px;
+  height: 70px;
+  background: none;
+  border: 10px solid #f00;
+}
+
+#mainVisual .pagination ul li.on a:after {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-image: url("../images/main/language_icon.gif");
+  background-size: contain;
+}
+
+#mainVisual .pagination ul li a {
+  display: block;
+  position: relative;
+  padding: 30px 0 30px 50px;
+}
+
+#mainVisual .pagination ul li a:before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '';
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#mainVisual .pagination ul li a:after {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '';
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#mainContents .mainBanners {
+  padding: 100px 100px 0 100px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+#mainContents .mainBanners .mainBanner {
+  width: 50%;
+  height: 300px;
+  position: relative;
+  color: #fff;
+  float: left;
+  overflow: hidden;
+}
+
+#mainContents .mainBanners .mainBanner a {
+  display: block;
+  height: 300px;
+  padding: 50px;
+}
+
+#mainContents .mainBanners .mainBanner:nth-child(1) {
+  background: #ff6f38;
+  background: -webkit-gradient(linear, left top, right top, from(#ff6f38), to(#ec1c2a));
+  background: linear-gradient(90deg, #ff6f38 0%, #ec1c2a 100%);
+}
+
+#mainContents .mainBanners .mainBanner:nth-child(2) {
+  position: relative;
+  z-index: 1;
+}
+
+#mainContents .mainBanners .mainBanner:nth-child(2) img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#mainContents .mainBanners .mainBanner h2 {
+  font-size: 1.6rem;
+  margin-bottom: 70px;
+}
+
+#mainContents .mainBanners .mainBanner h3 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+#mainContents .mainBanners .mainBanner p {
+  opacity: 0.5;
+  font-size: 1.6rem;
+}
+
+#mainContents .mainBanners .mainBanner span {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  font-size: 4rem;
+}
+
+#mainContents .quickMenu {
+  padding: 50px 100px 100px 100px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+#mainContents .quickMenu li {
+  width: 25%;
+  float: left;
+}
+
+#mainContents .quickMenu li:nth-child(2n+1) .contents:after {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  content: '';
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+}
+
+#mainContents .quickMenu li:nth-child(2n) .contents {
+  position: relative;
+  z-index: 2;
+}
+
+#mainContents .quickMenu li:nth-child(2n) .contents:after {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  content: '';
+  border: 10px solid transparent;
+  border-top-color: #fff;
+}
+
+#mainContents .quickMenu li .img {
+  position: relative;
+  overflow: hidden;
+}
+
+#mainContents .quickMenu li .img:before {
+  display: block;
+  content: '';
+  padding-top: 60%;
+}
+
+#mainContents .quickMenu li .img img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#mainContents .quickMenu li .contents {
+  position: relative;
+  background-color: #fff;
+}
+
+#mainContents .quickMenu li .contents:before {
+  display: block;
+  content: '';
+  padding-top: 60%;
+}
+
+#mainContents .quickMenu li .contents .inner {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+}
+
+#mainContents .quickMenu li .contents .inner h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+#mainContents .quickMenu li .contents .inner p {
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+
+#mainContents .request {
+  padding: 100px 0;
+  background: url("../images/main/main_inquiry_bg.jpg") 50% fixed;
+  background-size: cover;
+}
+
+#mainContents .request h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 100px;
+}
+
+#mainContents .request .requestBox {
+  width: 1100px;
+  margin: auto;
+}
+
+#mainContents .request .requestBox input[type="text"] {
+  height: 40px;
+  background: none;
+  color: #fff;
+  border: none;
+}
+
+#mainContents .request .requestBox label {
+  display: inline-block;
+  width: 80px;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+}
+
+#mainContents .request .requestBox .leftCon {
+  width: calc(50% - 15px);
+  float: left;
+  margin-right: 15px;
+}
+
+#mainContents .request .requestBox .leftCon > div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+}
+
+#mainContents .request .requestBox .rightCon {
+  width: calc(50% - 15px);
+  float: left;
+  margin-left: 15px;
+}
+
+#mainContents .request .requestBox .rightCon textarea {
+  width: 100%;
+  height: 180px;
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  resize: none;
+}
+
+#mainContents .request .privacyCheckBox {
+  clear: both;
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+#mainContents .request .privacyCheckBox input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin-left: -1px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+
+#mainContents .request .privacyCheckBox input[type="checkbox"] + label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#mainContents .request .privacyCheckBox input[type="checkbox"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../images/main/checkOff.png") 50%;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#mainContents .request .privacyCheckBox input[type="checkbox"]:checked + label:before {
+  background-image: url("../images/main/checkOn.png");
+}
+
+#mainContents .request .btns {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#mainContents .request .btns button {
+  font-size: 1.8rem;
+  width: 180px;
+  height: 80px;
+  line-height: 80px;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background: #ff6f38;
+  background: linear-gradient(135deg, #ff6f38 0%, #ec1c2a 100%);
+}
+
+#mainContents .partner {
+  padding: 100px;
+  background-color: #f8f8f8;
+}
+
+#mainContents .partner .mask {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+
+#mainContents .partner .mask:before {
+  content: '';
+  display: block;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d9d9d9;
+  position: absolute;
+  z-index: 2;
+}
+
+#mainContents .partner .mask:after {
+  z-index: 2;
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  position: absolute;
+}
+
+#mainContents .partner .mask ul {
+  height: 180px;
+}
+
+#mainContents .partner .mask ul li {
+  height: 90px;
+  text-align: center;
+  float: left;
+  background-color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainContents .partner .mask ul li:before {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d9d9d9;
+  position: absolute;
+}
+
+#mainContents .partner .mask ul li:after {
+  content: '';
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  position: absolute;
+}

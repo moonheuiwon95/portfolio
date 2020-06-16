@@ -1,0 +1,488 @@
+body {
+    color: inherit;
+}
+#remotemainVisual {
+    height: 100vh;
+    width:100%;
+    overflow: hidden;
+}
+#remotemainVisual {
+    background: url("../images/top-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#remotemainVisual .txtBox {
+    position: absolute;
+    text-align: center;
+    top:30%;
+    right: 50%;
+    transform: translateX(50%);
+    color:#fff;
+    z-index: 9;
+    font-size: 24px;
+    font-family: Noto Sans Korean;
+    font-weight: 400;
+}
+#remotemainVisual .txtBox .main {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+#remotemainVisual .txtBox .sub  {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+    
+}
+#remotemainVisual .txtBox .slash {
+    margin-bottom: 30px;
+}
+#remotemainVisual .txtBox .sub01 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: 1px solid #6700ff;
+    background-color: #6700ff;
+    display: inline-block;
+    padding:15px 80px 15px 30px;
+    color: #fff;
+    transition: 0.25s ease;
+    margin-top: 50px;
+    position: relative;
+}
+.btn > img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 10px;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    background-color:#5003c5 ;
+}
+.btn:hover img{
+    padding-left: 30px;
+}
+#remote {
+    color: #fff;
+    width: 100%;
+    top: 0;
+    background-color: #1a1a1b;
+}
+#remote .box {
+    position: relative;
+    padding: 146px 0;
+    margin: auto;
+    width: 800px;
+    
+}
+#remote p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#remote strong {
+    font-size: 40px;
+    margin: 8px 0 42px;
+    word-break: keep-all;
+    line-height: normal;
+}
+#remote span {
+    display: block;
+    margin-top: 50px;
+}
+#why {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-top: 100px;
+    position: relative;
+}
+#why .box {
+    position: relative;
+    margin: auto;
+    width: 1580px;
+    height: 610px;
+    color: #fff;
+    background-image: url(../images/bottom-bg.png);
+    background-attachment: fixed;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+#why h2 {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    font-size: 40px;
+    font-weight: 700;
+}
+#why .txtBox {
+    position: absolute;
+    width: 50%;
+    right:0;
+    top: 20%;
+    float: right;
+}
+#why .txtBox strong {
+    position: absolute;
+    display: inline-block;
+    line-height: .9;
+    font-weight: 500;
+    left: 0;
+    top: 0;
+    font-size: 60px;
+    font-family: Roboto;
+}
+#why .txtBox li {
+    position: relative;
+    padding-left: 30px;
+    margin: 40px 0;
+
+}
+#why .txtBox p {
+    margin-left: 80px;
+}
+#circle {
+    background-color: #fff;
+    margin-top: 100px;
+}
+#circle .box {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+#circle .box li {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+}
+#circle .box p {
+    line-height: 2.5;
+
+}
+#circle .box span {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+
+#circle .box:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #d1d0d1;
+    top:60%;
+}
+#circle .dbox{
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 21px;
+    text-transform: uppercase;
+}
+#circle .dbox span {
+    display: block;
+    margin: 30px 0;
+}
+#circle .dbox img {
+    height: 135px;
+}
+#circle .cbox {
+    background: #0064ff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    line-height: 200px;
+    position: relative;
+    display: inline-block;
+    transform: translateY(50%);
+    z-index: 2;
+}
+#circle .cbox img {
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translate(50%,50%);
+}
+#circle .imgbox {
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    z-index: 9;
+}
+#circle .bgbox {
+    background-color: #eff0f1;
+    height: 500px;
+    width: 100%;
+    transform: translateY(-80%);
+    
+}
+
+#iconList .listbox {
+    margin: auto;
+    width: 1000px;
+    padding-top: 50px;
+}
+#iconList h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#iconList h3>img {
+    width: 317px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+#iconList .txt {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 80px;
+
+}
+#iconList {
+    display: table;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    margin-top: -200px;
+}
+#iconList .icon {
+    display: table-cell;
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #e6e5e6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+}
+#iconList .icon img {
+    width: 150px;
+}
+#iconList li:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: 12px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+}
+#iconList .txt span {
+    font-size: 19px;
+    font-weight: 500;
+}
+#iconList .txt p {
+    margin-top: 10px;
+}
+#iconList li {
+    margin: -24px 0;
+    position: relative;
+}
+#iconList li:last-child:after {
+    display: none;
+}
+#gs {
+    width: 100%;
+    margin-top: 200px;
+}
+#gs:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+}
+#gs .goodbox {
+    width: 1000px;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 98px;
+}
+#gs .logo {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(200%);
+}
+#gs .logo img{
+    height: 95px;
+    width: 185px;
+}
+#gs h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#gs .txt {
+    padding-left: 250px;
+}
+#gs .txt strong {
+    font-weight: 700;
+}
+#gs .txt .sub {
+    margin-top: 20px;
+}
+#use {
+    background-color: #1a1e24;
+    color: #fff;
+    padding: 100px 0;
+    height: 400px;
+    position: relative;
+}
+#use .bg {
+    position: relative;
+}
+#use p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+#use span {
+    font-size: 34px;
+}
+#use .imgbox {
+    float: right;
+    transform: translateY(-40%);
+}
+#use .imgbox img{
+    width: 1020px;
+}
+#use .txt {
+    padding-left: 400px;
+}
+#use h1:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    transform: translateY(20px);
+    width: 50px;
+    height: 1px;
+    background-color: #d9d9d9;
+
+}
+#use h1 {
+    margin-top: 100px;
+    padding-left: 60px;
+    left: 0;
+    z-index: 999;
+    font-size: 25px;
+    color: #fff;
+}
+#use .pag {
+    position: absolute;
+    right: 60%;
+    bottom: -90%;
+    color: #333;
+}
+#use .pag span {
+    font-size: 22px;
+    line-height: 20px;
+    
+}
+#use .pag img {
+    width: 35px;
+    padding:0 20px;
+}
+
+#use .swiper-container {
+    width: 1000px;
+}
+#contactbox {
+    background: url("../images/img_main_contact.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+    background-color: black;
+    z-index: 9999;    
+    margin-top: 300px;
+    background-attachment: fixed;
+    
+}
+#contactbox .container {
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+#contactbox .container .txt {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+#contactbox .btns {
+    display: inline-block;
+    margin-top: 50px;
+
+}
+#contactbox .btns a {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+    border: 1px solid transparent;
+    background-color: var(--main-color);
+    margin-left: 10px;
+    transition: 0.5s ease;
+}
+
+#contactbox .btns a:hover {
+    background-color: #4701af;
+}
+
+#footer .top {
+    background-color: #6700ff;
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    top: -30px;
+    right: 70px;
+    position: absolute;
+    font-size: 13px;
+    font-family: "Roboto";
+    
+}
+#footer .top img {
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    transform: translateX(50%);
+}
+#footer .list{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+#footer .list a {
+    width: 198px;
+    padding: 15px 24px;
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+    background-color: #1d1c20;
+    transition: 0.3s ease;
+    position: relative;
+}
+#footer .list a:hover {
+    color: #6700ff
+}
+#footer .list img {
+    position: absolute;
+    width: 12px;
+    right: 10%;
+    top: 50%;
+}

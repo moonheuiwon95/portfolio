@@ -1,0 +1,698 @@
+#subVisual {
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-position: center;
+}
+.subVisual01 {
+    background-image: url("../images/sub/sub1_bg.jpg");
+}
+.subVisual02 {
+    background-image: url("../images/business/sub2_bg.jpg");
+}
+.subVisual03 {
+    background-image: url("../images/sub/sub3_bg.jpg");
+    background-position: center;
+}
+.subVisual04 {
+    background-image: url("../images/business/sub4_bg.jpg");
+}
+#subVisual .subTitle {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#subVisual .subTitle h2 {
+    margin-bottom: -10px;
+    font-size: 48px;
+    font-weight: 500;
+}
+#subVisual .subTitle p {
+    font-size: 18px;
+    font-weight: 500;
+}
+#subContents {
+    min-height: 100vh;
+    margin: auto;
+    padding-bottom: 100px;
+}
+#lnb {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(0,0,0,0.4);
+    height: 70px;
+    z-index: 5;
+}
+#lnb .btnHome {
+    text-align: center;
+    font-size: 24px;
+    float: left;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+#lnb .listBox {
+    margin-left: -1px;
+    float: left;
+    width: 340px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+#lnb .listBox:last-child {
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+#lnb .listBox a {
+    display: block;
+    padding: 0 20px;
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+}
+#lnb .listBox a i {
+    position: absolute;
+    top: 0;
+    line-height: 70px;
+    right: 20px;
+}
+#lnb .listBox ul li a {
+    margin-top: -1px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(0,0,0,0.4);
+}
+#lnb .listBox ul li a:hover {
+    background-color: #444;
+}
+#lnb .listBox ul {
+    display: none;
+}
+.contentsTitle {
+    padding: 110px 0 0;
+    text-align: center;
+    font-size: 52px;
+}
+.contentsTitle:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 40px;
+    background-color: #333;
+    margin: 0 auto 80px;
+}
+.summary .slogan {
+    background: url("../images/sub/m11_slg_bg.jpg") no-repeat 100% 50% / cover;
+    background-size: cover;
+    color: #fff;
+    height: 550px;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    float: right;
+    width: 100%;
+    max-width: 1680px;
+}
+.summary .slogan p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.summary .slogan p:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 auto 30px;
+}
+.summary .soulbrain {
+    margin-top: 150px;
+    position: relative;
+    min-height: 800px;
+}
+.summary .soulbrain::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: -300px;
+    z-index: -1;
+}
+.summary .soulbrain .imgBox {
+    position: absolute;
+    background: url("../images/sub/m11_section2_img.jpg");
+    width: 950px;
+    height: 690px;
+    margin-left: 0;
+    transform: translateX(-35%);
+}
+.summary .soulbrain .txtBox {
+    float: right;
+    width: 50%;
+}
+.summary .soulbrain .txtBox p {
+    margin-bottom: 30px;
+}
+.summary .soulbrain .txtBox .title {
+    font-size: 42px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+/* greeting start */
+
+.tabContentsList > li {
+    display: none;
+} 
+.tabContentsList > li.on {
+    display: block;
+}
+.greeting .greetingBox {
+    padding: 0 0 200px;
+    background: url("../images/sub/m12_bg1.gif") no-repeat 50% 100% / cover;
+    text-align: center;
+    background-size: cover;
+}
+.greeting .greetingBox .main:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #d9d9d9;
+    margin: 20px auto;
+}
+.greeting .greetingBox .main {
+    font-size: 32px;
+    font-weight: 700;
+}
+.greeting .greetingBox .sub {
+    font-size: 28px;
+    font-weight: 400;
+}
+.tab {
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+}
+.tab ul li a {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    padding: 0 40px;
+
+}
+.tab ul li.on a {
+    color: #fff;
+    background-color: #4fadd7;
+    position: relative;
+}
+.tab ul li.on a:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border: 10px solid transparent;
+    border-top-color: #4fadd7;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.greeting .greetingList .hi {
+    padding: 100px 0 5px 160px; 
+    background: url("../images/sub/bg_dd1.png") no-repeat 40px 50%;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.greeting .greetingList .greetingTxt {
+    padding: 100px 150px;
+}
+.greeting .greetingList .greetingTxt .main {
+    font-size: 28px;
+    margin: 30px 0;
+}
+.greeting .greetingList .greetingTxt .sub {
+    margin-top: 40px;
+}
+.greeting .greetingList .greetingTxt .sign {
+    margin-top: 60px;
+}
+.greeting .greetingList .greetingTxt .sign strong {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* business start */
+.business .businessHeaderBox {
+    padding-bottom: 280px;
+    background: url("../images/sub/m12_bg1.gif") no-repeat 50% 100% / contain;
+    background-size: contain;
+}
+.business .businessHeaderBox .titleBox {
+    position: absolute;
+    width: 950px;
+    height: 300px;
+    padding: 80px;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+}
+.business .businessHeaderBox .titleBox .eng {
+    font-size: 20px;
+    font-weight: 700;
+}
+.business .businessHeaderBox .titleBox .eng:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 40px;
+    background-color: #333;
+    margin: 10px 0;
+}
+.business .businessHeaderBox .titleBox .main {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.business .businessHeaderBox .titleBox .sub {
+    font-size: 18px;
+    font-weight: 200;
+}
+.business .businessList > li > div {
+    padding: 50px 0 0;
+}
+.business .businessList .main {
+    padding: 100px;
+}
+.business .businessList .main .imgBox {
+    float: left;
+    
+}
+.business .businessList .main .txtBox {
+    float: right;
+    width: 50%;
+    padding: 100px 0;
+}
+.business .businessList .main .txtBox h4 {
+    margin-bottom: 50px;
+}
+.business .businessList .main .txtBox h4 .kor {
+    font-size: 28px;
+    font-weight: 500;
+    display: block;
+}
+.business .businessList .main .txtBox h4 .eng {
+    font-size: 52px;
+    font-weight: 700;
+    display: block;
+    margin-top: 10px;
+}
+.business .businessList .main .txtBox p {
+    font-size: 18px;
+}
+.business .businessList .title {
+    font-size: 28px;
+    position: relative;
+    font-weight: 600;
+    margin: 0 0 30px;
+}
+.business .businessList .title:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.business .businessList .title span {
+    display: inline-block;
+    padding-right: 30px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+
+}
+.business .businessList .productList li {
+    width: 25%;
+    margin: 10px 0;
+}
+.business .businessList .productList.wide li {
+    width: 100%;
+}
+.business .businessList .productList li:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 2px;
+    background-color: #333;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.business .businessList .example li {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    margin-left: -1px;
+    padding-top: 140px;
+}
+.business .businessList .example li img {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+}
+.business .businessList .manager li {
+    margin-right: 30px;
+}
+.business .businessList .manager li .name {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.business .businessList .manager li .name:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 1px;
+    background-color: #333;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.business .businessList .manager li .mail {
+    padding-left: 10px;
+}
+.business .businessList .manager li .mail i {
+    font-size: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-weight: 200;
+}
+/*  */
+.rnd .soulbrain {
+    margin-top: 90px;
+    position: relative;
+    min-height: 800px;
+    width: 100%;
+    
+}
+.rnd .soulbrain .txtBox {
+    float: right;
+    width: 50%;
+}
+.rnd .soulbrain .txtBox img {
+    position: absolute;
+    left: -252px;
+    height: 650px;
+    width: 950px;
+}
+
+.rnd .soulbrain .txtBox p {
+    margin-left: 75px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+.rnd .soulbrain .txtBox .title::before {
+    content: "";
+    display: block;
+    width: 235px;
+    height: 3px;
+    background-color: #82c6e4;
+    position: absolute;
+    left: 36%;
+    top: 135px;
+    margin-right: 35px;
+    z-index: 10;
+}
+.rnd .soulbrain .txtBox .title {
+    font-size: 42px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    margin-left: 75px;
+}
+.rnd .soulbrain .section02 {
+    background-color: #f5f5f5;
+    height: auto;
+    padding: 60px 0 15px;
+}
+.rnd .soulbrain .section02 .title:before {
+    content: "";
+    display: block;
+    width: 158px;
+    height: 126px;
+    background: url("../images/sub/bg_dd1.png") no-repeat;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+.rnd .soulbrain .section02 .title {
+    position: relative;
+    padding: 180px 0;
+    text-align: center; 
+}
+.rnd .soulbrain .section02 .title:after {
+    content: "";
+    display: block;
+    width: 158px;
+    height: 126px;
+    background: url("../images/sub/bg_dd2.png") no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.rnd .soulbrain .section02 h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.rnd .soulbrain .section02 .conwrap {
+    margin-bottom: 160px;
+    padding-left: 100px;
+}
+
+.rnd .soulbrain .section02 .conwrap .imgBox img {
+    width: 630px;
+    height: 570px;
+    float: right;
+    position: relative;
+    top: -28px;
+}
+.rnd .soulbrain .section02 .conwrap .number {
+    padding-right: 65px;
+    width: 100%;
+}
+.rnd .soulbrain .section02 .conwrap .imgBox02 img {
+    width: 630px;
+    height: 570px;
+    float: left;
+    position: relative;
+}
+.rnd .soulbrain .section02 .conwrap .number02 {
+    width: 100%;
+
+}
+.rnd .soulbrain .section02 .conwrap .num02 {
+    position: relative;
+    padding-bottom: 30px;
+    padding-left: 200px;
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    border-bottom: 3px solid #222;
+    width: 63%;
+    margin-left: 38%;
+}
+.rnd .soulbrain .section02 .conwrap .numlist02 {
+    position: relative;
+    left: 65px;
+    margin-bottom: 220px;
+}
+.rnd .soulbrain .section02 .conwrap .num {
+    position: relative;
+    padding-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    border-bottom: 3px solid #222;
+    width: 63%;
+}
+.rnd .soulbrain .section02 .conwrap p > strong {
+    font-size: 28px;
+    margin: 55px 0 50px;
+    display: block;
+    font-weight: 500;
+}
+.rnd .soulbrain .section02 .conwrap p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #444;
+    letter-spacing: -1px;
+}
+.rnd .soulbrain .endtxt strong {
+    font-weight: 500;
+}
+.rnd .soulbrain .endtxt {
+    width: 1200px;
+    margin: 125px auto;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 0 0 125px;
+    color: #444;
+    display: block;
+    /* margin: 125px 360px; */
+    line-height: 1.5;
+    border-bottom: 3px solid #222;
+    position: relative;
+}
+/* .rnd .soulbrain .endtxt:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 145px;
+    color: #a4d4e9;
+    position: absolute;
+} */
+.rnd .soulbrain .lasttxt h4 {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+.rnd .soulbrain .lasttxt h4:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto 35px;
+    background-color: #222;
+}
+.rnd .soulbrain .lasttxt {
+    width: 1200px;
+    margin: auto;
+}
+.rnd .soulbrain .lasttxt dl {
+    margin-top: 45px;
+    position: relative;
+    width: 48%;
+    display: inline-block;
+    padding: 35px 0;
+    background: #f5f5f5;
+    text-align: center;
+    margin-right: 20px;
+}
+.rnd .soulbrain .lasttxt dl:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: url("../images/r&D/bg_dot1.png") repeat;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.rnd .soulbrain .lasttxt dt {
+    font-size: 24px;
+    margin: 15px 0;
+    font-weight: 500;
+}
+.rnd .soulbrain .lasttxt dd {
+    font-size: 30px;
+    color: #666;
+}
+.rnd .soulbrain .lasttxt dd:after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 1px;
+    background-color: #444;
+    margin: 20px auto 0;
+}
+
+
+
+
+
+
+
+
+
+/*  */
+.irBox {
+    padding: 30px;
+    border-top: 1px solid #333;
+    margin-top: 50px;
+}
+.irBox h4 {
+    float: left;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.irBox h4:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #444;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.irBox .infoBox {
+    width: 980px;
+    float: right;
+}
+.irBox .infoBox .imgBox {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 50px 0;
+    margin-bottom: 50px;
+    width: 100%;
+    
+}
+/* .irBox .infoBox .imgBox:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 25px 0;
+} */
+.irBox .infoBox .textCenter {
+
+}
+/* .irBox .textCenter:before {
+    content: "";
+    padding: 50px 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    color:  #d3d3d3;
+} */
+
+
+/* table 디자인은 반드시 공통으로. */
+table {
+    border-top: 2.5px solid #333;
+    width: 100%;
+}
+table.textCenter {
+    text-align: center;
+}
+table td,table th {
+    border-left: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 15px;
+}
+table td:nth-child(1),table th:nth-child(1) {
+    border-left: none;
+}
+table th {
+    background-color: #f8f8f8;
+}
